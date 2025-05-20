@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bayraktar Elektrik - Elektrik tesisatı, arıza onarımı, aydınlatma sistemleri ve daha fazlası. İstanbul genelinde profesyonel hizmet.">
+  <title>Bayraktar Elektrik</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; line-height: 1.6; }
+    header { background: #222; color: #fff; padding: 20px; text-align: center; }
+    nav a { color: #fff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+    h2 { color: #333; margin-bottom: 20px; }
+    ul { list-style: disc; padding-left: 20px; }
+    form input, form textarea { width: 100%; padding: 10px; margin-bottom: 10px; border: 1px solid #ccc; }
+    form button { background: #333; color: #fff; border: none; padding: 10px 20px; cursor: pointer; }
+    footer { background: #eee; text-align: center; padding: 20px; margin-top: 40px; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      z-index: 100;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+    }
+    .whatsapp-float a { color: white; line-height: 60px; display: block; text-decoration: none; }
+    iframe { width: 100%; height: 300px; border: 0; }
+    @media (max-width: 600px) {
+      nav { display: flex; flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Bayraktar Elektrik</h1>
+    <p>Profesyonel Elektrik Tesisatı ve Onarım Hizmetleri</p>
+    <nav>
+      <a href="#hakkimizda">Hakkımızda</a>
+      <a href="#hizmetler">Hizmetler</a>
+      <a href="#iletisim">İletişim</a>
+      <a href="#teklif">Teklif Al</a>
+    </nav>
+  </header>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>Bayraktar Elektrik, 20 yılı aşkın deneyimiyle İstanbul genelinde konut, iş yeri ve fabrika elektrik tesisatlarında uzmanlaşmıştır. Güvenli, hızlı ve kaliteli hizmet sunmayı ilke edindik.</p>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <ul>
+      <li>Yeni bina elektrik tesisatı kurulumu</li>
+      <li>Mevcut tesisat yenileme ve bakım</li>
+      <li>Sigorta kutusu ve pano sistemleri</li>
+      <li>Aydınlatma sistemleri kurulumu</li>
+      <li>Elektrik arızası tespiti ve onarımı</li>
+      <li>Topraklama ve kaçak akım rölesi montajı</li>
+    </ul>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim Bilgileri</h2>
+    <p>📞 Telefon: <a href="tel:05366681328">0536 668 13 28</a></p>
+    <p>📧 E-posta: info@bayraktarelektrik.com</p>
+    <p>📍 Adres: İstanbul, Türkiye</p>
+    <h3>Haritada Görüntüle:</h3>
+    <iframe src="https://www.google.com/maps?q=İstanbul&output=embed"></iframe>
+  </section>
+
+  <section id="teklif">
+    <h2>Teklif Alın</h2>
+    <form onsubmit="alert('Talebiniz başarıyla gönderildi. En kısa sürede sizinle iletişime geçilecektir.'); return false;">
+      <input type="text" name="isim" placeholder="Adınız Soyadınız" required>
+      <input type="tel" name="telefon" placeholder="Telefon Numaranız" required>
+      <input type="email" name="email" placeholder="E-posta Adresiniz" required>
+      <textarea name="mesaj" placeholder="Hizmet talebiniz..." rows="5" required></textarea>
+      <button type="submit">Gönder</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Bayraktar Elektrik | Tüm hakları saklıdır.</p>
+  </footer>
+
+  <div class="whatsapp-float">
+    <a href="https://wa.me/905366681328" target="_blank" title="WhatsApp ile İletişime Geç">
+      🟢
+    </a>
+  </div>
+
+</body>
+</html>
