@@ -1,111 +1,114 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bayraktar Elektrik</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-  <style>
-    body { margin: 0; font-family: Arial, sans-serif; }
-    header { background: #ff9800; padding: 15px 20px; display: flex; justify-content: space-between; align-items: center; color: white; }
-    header h1 { margin: 0; }
-    nav a { color: white; margin: 0 10px; text-decoration: none; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    .slider { position: relative; max-width: 100%; height: 400px; overflow: hidden; }
-    .slider img { width: 100%; height: 400px; object-fit: cover; display: none; }
-    .slider img.active { display: block; }
-    section { padding: 40px 20px; max-width: 1000px; margin: auto; }
-    h2 { text-align: center; margin-bottom: 20px; color: #333; }
-    .about, .services, .contact { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .about img { width: 400px; border-radius: 10px; }
-    .about div { max-width: 500px; }
-    .service { flex: 1 1 250px; text-align: center; padding: 20px; background: #f9f9f9; border-radius: 10px; }
-    .service i { font-size: 50px; color: #ff9800; margin-bottom: 10px; }
-    form { display: flex; flex-direction: column; gap: 10px; max-width: 400px; }
-    input, textarea { padding: 10px; border: 1px solid #ccc; border-radius: 5px; }
-    button { padding: 10px; background: #ff9800; color: white; border: none; cursor: pointer; border-radius: 5px; }
-    button:hover { background: #e68a00; }
-    iframe { border: 0; width: 100%; height: 300px; border-radius: 10px; }
-    footer { background: #333; color: white; text-align: center; padding: 15px; margin-top: 20px; }
-    @media (max-width: 768px) {
-      .about, .contact { flex-direction: column; align-items: center; }
-      .about img { width: 100%; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bayraktar Elektrik</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ffcc00;
+            color: black;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25d366;
+            border-radius: 50%;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .whatsapp-float img {
+            width: 35px;
+            height: 35px;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Bayraktar Elektrik</h1>
+    <header>
+        <h1>Bayraktar Elektrik</h1>
+        <p>Elektrik Tesisatı ve Bakım Hizmetleri</p>
+    </header>
+
     <nav>
-      <a href="#about">Hakkımızda</a>
-      <a href="#services">Hizmetler</a>
-      <a href="#contact">İletişim</a>
+        <a href="#hakkimizda">Hakkımızda</a>
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#iletisim">İletişim</a>
     </nav>
-  </header>
 
-  <div class="slider">
-    <img src="https://images.unsplash.com/photo-1581091870622-2a56f638bdee" class="active">
-    <img src="https://images.unsplash.com/photo-1593062096033-9b1a3c9f3c8b">
-    <img src="https://images.unsplash.com/photo-1558138838-7622d3dfd8d5">
-  </div>
+    <section id="hakkimizda">
+        <h2>Hakkımızda</h2>
+        <p>Bayraktar Elektrik olarak elektrik tesisatı, bakım ve onarım hizmetlerinde uzman kadromuzla sizlere en iyi çözümleri sunuyoruz.</p>
+        <img src="https://via.placeholder.com/800x300" alt="Elektrik Çalışması" width="100%">
+    </section>
 
-  <section id="about">
-    <h2>Hakkımızda</h2>
-    <div class="about">
-      <img src="https://images.unsplash.com/photo-1593062096033-9b1a3c9f3c8b" alt="Elektrik Ustası">
-      <div>
-        <p>Bayraktar Elektrik olarak yıllardır ev, iş yeri ve endüstriyel elektrik tesisatında kaliteli hizmet veriyoruz. Uzman ekibimiz ile güvenli, hızlı ve ekonomik çözümler sunuyoruz.</p>
-      </div>
-    </div>
-  </section>
+    <section id="hizmetler">
+        <h2>Hizmetlerimiz</h2>
+        <ul>
+            <li>Elektrik tesisatı kurulumu</li>
+            <li>Arıza tespiti ve onarım</li>
+            <li>Aydınlatma sistemleri</li>
+            <li>Sigorta panosu montajı</li>
+        </ul>
+    </section>
 
-  <section id="services">
-    <h2>Hizmetlerimiz</h2>
-    <div class="services">
-      <div class="service">
-        <i class="fas fa-home"></i>
-        <h3>Ev Tesisatı</h3>
-        <p>Yeni bina ve tadilatlarda elektrik tesisat kurulum ve yenileme.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-bolt"></i>
-        <h3>Arıza Onarım</h3>
-        <p>Elektrik arızalarının hızlı ve güvenli onarımı.</p>
-      </div>
-      <div class="service">
-        <i class="fas fa-industry"></i>
-        <h3>Endüstriyel Elektrik</h3>
-        <p>Fabrika ve sanayi tesislerinde profesyonel elektrik çözümleri.</p>
-      </div>
-    </div>
-  </section>
+    <section id="iletisim">
+        <h2>İletişim</h2>
+        <p>Adres: İstanbul, Türkiye</p>
+        <p>Telefon: <a href="tel:+905xxxxxxxxx">+90 5xx xxx xx xx</a></p>
+        <p>Email: info@bayraktarelektrik.com</p>
 
-  <section id="contact">
-    <h2>İletişim</h2>
-    <div class="contact">
-      <form>
-        <input type="text" placeholder="Adınız" required>
-        <input type="email" placeholder="E-posta" required>
-        <textarea placeholder="Mesajınız" rows="5" required></textarea>
-        <button type="submit">Gönder</button>
-      </form>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!..." allowfullscreen="" loading="lazy"></iframe>
-    </div>
-  </section>
+        <!-- Google Maps -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=KENDI_KONUM_KODUN" 
+          width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
 
-  <footer>
-    &copy; 2025 Bayraktar Elektrik - Tüm Hakları Saklıdır.
-  </footer>
+    <footer>
+        <p>&copy; 2025 Bayraktar Elektrik. Tüm hakları saklıdır.</p>
+    </footer>
 
-  <script>
-    let slideIndex = 0;
-    const slides = document.querySelectorAll(".slider img");
-    setInterval(() => {
-      slides[slideIndex].classList.remove("active");
-      slideIndex = (slideIndex + 1) % slides.length;
-      slides[slideIndex].classList.add("active");
-    }, 3000);
-  </script>
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/905366681328" class="whatsapp-float" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </a>
+
 </body>
 </html>
